@@ -11,17 +11,10 @@ The neural network architecture consists of an input layer, two hidden layers, a
 2.1 Forward Pass
 During the forward propagation, the following steps occur:
 
-The input data 
-𝑋
-X is transformed through the first hidden layer using weights 𝑤1 ​and biases b1 , resulting in an intermediate value 𝑧1
-The activation function 
-𝑔(𝑧1)
-is applied to produce the output of the first hidden layer, denoted as 𝑎1
+The input data X is transformed through the first hidden layer using weights 𝑤1 ​and biases b1 , resulting in an intermediate value 𝑧1
+The activation function 𝑔(𝑧1) is applied to produce the output of the first hidden layer, denoted as 𝑎1
 
 This process is repeated for the second hidden layer, resulting in output 𝑎2
-a 
-2
-​
 Finally, the output layer applies the Softmax function to produce class probabilities 𝑎3
 
 2.2 Backward Pass
@@ -29,10 +22,7 @@ The backpropagation process computes gradients based on the categorical cross-en
 
 2.3 Parameter Updates
 Weights and biases are updated iteratively using the computed gradients, following the equation:
-
-𝑤𝑖=𝑤𝑖−𝛼⋅𝑑𝑤𝑖
-where 
-α is the learning rate.
+𝑤𝑖=𝑤𝑖−𝛼⋅𝑑𝑤𝑖 where α is the learning rate.
 
 3. Initial Settings
 3.1 Sampling Parameters
@@ -44,11 +34,7 @@ The dataset is split into training and testing sets. The input features are norm
 3.3 Hyperparameters
 The following hyperparameters are set for the training process:
 
-Learning Rate: 
-𝛼
-=
-0.01
-α=0.01
+Learning Rate α=0.01
 Epochs: 2000
 Batch Size: 32
 Hidden Layer Sizes:
